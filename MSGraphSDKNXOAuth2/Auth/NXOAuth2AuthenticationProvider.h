@@ -20,7 +20,7 @@
 //
 
 #import <Foundation/Foundation.h>
-
+#import "NXOAuth2.h"
 #import "MSAuthenticationProvider.h"
 
 @interface NXOAuth2AuthenticationProvider : NSObject <MSAuthenticationProvider>
@@ -34,6 +34,7 @@
 @property (nonatomic, strong) NSString *tokenURL;
 @property (nonatomic, strong) NSString *redirectURL;
 @property (nonatomic, strong) NSString *tokenType;
+@property (nonatomic, strong) NXOAuth2Account *userAccount;
 
 /**
  Get the default singleton instance of OAuth2AuthenticationProvider
