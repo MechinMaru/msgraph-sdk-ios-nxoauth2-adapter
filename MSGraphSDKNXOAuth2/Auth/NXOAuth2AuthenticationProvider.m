@@ -21,7 +21,7 @@
 
 #import "NXOAuth2AuthenticationProvider.h"
 
-#import "NXOAuth2.h"
+//#import "NXOAuth2.h"
 #import "MSAuthConstants.h"
 #import "MSAuthenticationViewController.h"
 #import "MSLogger.h"
@@ -32,7 +32,7 @@ typedef void (^AuthCompletion)(NSError *error);
 
 @interface NXOAuth2AuthenticationProvider ()
 
-@property (nonatomic, strong) NXOAuth2Account *userAccount;
+//@property (nonatomic, strong) NXOAuth2Account *userAccount;
 @property (nonatomic, strong) MSLogger *logger;
 @property (nonatomic, copy) AuthCompletion pendingAuthCompletion;  // Used to translate NXOAuth2 observer to completion block
 @property (nonatomic, strong, readwrite) NSString *clientId;  // Override to readwrite internally
